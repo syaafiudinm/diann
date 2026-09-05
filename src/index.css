@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-blush-50: #fff5f8;
+  --color-blush-100: #ffe6ef;
+  --color-blush-200: #ffcfe0;
+  --color-blush-300: #ffaecb;
+  --color-blush-400: #ff85b3;
+  --color-blush-500: #f95d9b;
+  --color-blush-600: #e63f80;
+  --color-blush-700: #c02a66;
+  --color-blush-800: #8f1f4c;
+  --color-blush-900: #5e1433;
+
+  --color-ink-500: #6b5f65;
+  --color-ink-700: #3f353b;
+  --color-ink-900: #241d21;
+
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-marquee: marquee 28s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(0, -22px, 0) scale(1.05); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    background-color: var(--color-blush-50);
+    color: var(--color-ink-700);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-blush-200);
+    color: var(--color-blush-900);
+  }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--color-blush-50); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-blush-200);
+    border-radius: 9999px;
+    border: 3px solid var(--color-blush-50);
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-blush-300); }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@utility reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
