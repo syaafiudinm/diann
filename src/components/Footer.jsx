@@ -25,7 +25,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="border-t border-blush-50 py-5 text-center text-[12px] text-ink-500">
-        © {new Date().getFullYear()} {profile.name}. Dibuat dengan React, Vite &amp; Tailwind CSS.
+        © {new Date().getFullYear()} {profile.name}. All rights reserved.
       </div>
     </footer>
   );
