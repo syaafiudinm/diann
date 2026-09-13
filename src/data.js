@@ -11,7 +11,7 @@ export const profile = {
   phone: "+6285217220908",
   phoneHref: "+6285217220908",
   whatsapp: "6285217220908",
-  photo: "/dian.jpg",
+  photo: "/dian.jpeg",
 };
 
 export const stats = [

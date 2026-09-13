@@ -13,7 +13,7 @@ export default function Photo({ className = "" }) {
         <div className="text-center">
           <p className="font-display text-6xl font-semibold">{profile.initials}</p>
           <p className="mt-2 px-6 text-[11px] leading-relaxed tracking-wide text-blush-600/80">
-            Simpan foto sebagai <code className="rounded bg-white/70 px-1">public/dian.jpg</code>
+            Simpan foto sebagai <code className="rounded bg-white/70 px-1">public/dian.jpeg</code>
           </p>
         </div>
       </div>
