@@ -8,9 +8,9 @@ export const profile = {
     "Lulusan Sarjana Kesehatan Masyarakat peminatan Epidemiologi dengan predikat Cumlaude (IPK 3.92) yang memiliki ketelitian tinggi dalam pengolahan data kesehatan dan surveilans. Berpengalaman menggunakan perangkat lunak statistik (SPSS) untuk analisis tren penyakit, serta memiliki motivasi kuat untuk berkontribusi dalam pengendalian penyakit berbasis data dan penguatan sistem informasi kesehatan.",
   location: "Makassar, Sulawesi Selatan",
   email: "andidian514@gmail.com",
-  phone: "+6285217220908",
-  phoneHref: "+6285217220908",
-  whatsapp: "6285217220908",
+  phone: "+6282291930974",
+  phoneHref: "+6282291930974",
+  whatsapp: "6282291930974",
   photo: "/dian.jpeg",
 };
 
